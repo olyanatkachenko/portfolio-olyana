@@ -1,3 +1,6 @@
+:root{
+   --main-color: #5943E5;
+}
 
 
 body {
@@ -45,11 +48,14 @@ header {
 
 button {
     padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
-    border: none;
-    border-radius: 50px;
-    transition: all 0.3s ease 0s;
+    color: var(--main-color);
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    border-radius: 50 px var(--main-color);
+    line-height:1;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 15px;
 }
 
 button:hover {
