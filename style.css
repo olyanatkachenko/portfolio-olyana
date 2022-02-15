@@ -3,48 +3,59 @@
 :root {
     --main-accent-color: #5943E5;
     --grey-color: #656b8e;
-    --dark-main-color: #0f1221
+    --dark-main-color: #0f1221;
+    --light-violet:#f9f9fc;
 }
 
 
 body {
     background: white;
+    font-family: Inter, sans-serif;
 }
 
 main {
-    padding-top: 60px;
-    padding-bottom: 96px;
+
 }
 
 header {
     display: flex;
     justify-content: flex-end;
-
     align-items: center;
-    padding: 30px 10%;
+    padding: 20px 3%;
 }
 
 .button-mail {
     cursor: pointer;
     margin-right: auto;
+    line-height: 24px;
+    font-size: 16px;
+    text-decoration: none;
 }
+
 
 .nav-links {
     list-style: none;
+    margin: 0px !important;
 
 }
 
 .nav-links li {
     display: inline-block;
-    padding: 0 20px;
 }
 
 .nav-links li a {
     transition: all 0.3s ease 0s;
+    list-style: none;
+    color: var(--grey-color);
+    padding-right: 32px;
+    padding-left: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .nav-links li a:hover {
-    color: aqua;
+    color: var(--dark-main-color);
 }
 
 .menu {
@@ -52,25 +63,30 @@ header {
 }
 
 button {
-    padding: 9px 25px;
+    min-width: 140px;
+    padding: 12px 24px;
     color: var(--main-accent-color);
     background-color: transparent;
-    border: 1px solid var(--main-accent-color);
-    border-radius: 50px var(--main-accent-color);
+    border: 1px solid  var(--main-accent-color);
+    border-radius: 2px !important;
     line-height: 1;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    margin-left: 15px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
 }
 
 button:hover {
-    background-color: beige;
+    background-color: var(--main-accent-color);
+    color: white;
 }
 
 
 .photo {
     display: flex;
     justify-content: center;
+    padding: 60px;
 }
 
 
