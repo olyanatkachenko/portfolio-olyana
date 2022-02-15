@@ -48,6 +48,7 @@
         <a href="#">Experience</a>
         <a href="#">Work</a>
         <a href="#">Contact</a>
+        <a href="#">Resume</a>
     </div>
 </div>
 
@@ -60,11 +61,9 @@
 
     </h3>
     <h1>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    </h1>
+        I build things for the web</h1>
     <h2>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida porta etiam massa tincidunt lorem convallis
-        mauris. Ac tellus erat tortor, mauris auctor viverra elementum cursus.
+        I’m a professional UI/UX designer with front end development skills based in Kyiv.
     </h2>
     <div class="cta-connect">
         <button>Connect with me</button>
@@ -72,7 +71,8 @@
 
     <div class="about-me">
         <h2 class="about">
-            About me
+            👩 A bit about me
+
         </h2>
         <div class="paragraf-about">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida porta etiam massa tincidunt lorem
@@ -89,11 +89,11 @@
 
                 Ac arcu urna neque ornare sed. Viverra nullam ut posuere sem nibh quisque ullamcorper mi pellentesque.
             </p>
-            <img src="img/photo-portfolio.jpg" class="photo-about">
+            <!--<img src="img/photo-portfolio.jpg" class="photo-about">-->
         </div>
     </div>
 
-    <div class="my-experience">
+    <!--<div class="my-experience">
         <h2 class="experience">
             Where I’ve Worked
         </h2>
@@ -112,18 +112,25 @@
 
             Ac arcu urna neque ornare sed. Viverra nullam ut posuere sem nibh quisque ullamcorper mi pellentesque.
         </p>
-    </div>
+    </div>-->
     <div class="my-work">
         <section>
             <div class="row">
-                <h2>Some Things I’ve Built</h2>
+                <h2 class="work-title">Some Things I’ve Built</h2>
             </div>
-            <div class="row">
+            <p class="work">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida porta etiam massa tincidunt lorem
+                convallis
+                mauris. Ac tellus erat tortor, mauris auctor viverra elementum cursus.
+                <br>
+                <br>
+            </p>
+            <div class="row-custom">
                 <!-- Column 1-->
                 <div class="column">
                     <div class="card">
                         <div class="img-container">
-                            <img src="img/weather-app.png"/>
+                            <img class="img-fluid" src="img/weather-app.png"/>
                         </div>
                         <h4>Weather</h4>
                         <p>About weather</p>
@@ -183,8 +190,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
-        <div class="Contact-me">
+
+        <div class="contact-me">
             <h2 class="contact">
                 What’s Next?
             </h2>
@@ -195,24 +204,31 @@
 
                 <div class="container">
                     <div class="contact-form">
-                        <div class="form-field col-lg-6">
-                            <input id="name" class="input-text" type="text" name="">
-                            <label for="name" class="label">name</label>
+                        <div class="row">
+                            <div class="form-field col">
+                                <label for="name" class="label">Your Name</label>
+                                <input id="name" class="input-text" type="text">
+                            </div>
+
+                            <div class="form-field col">
+                                <input id="email" class="input-text" type="email" name="">
+                                <label for="email" class="label">Email Address
+                                </label>
+                            </div>
                         </div>
 
-                        <div class="form-field col-lg-6">
-                            <input id="email" class="input-text" type="email" name="">
-                            <label for="email" class="label">email</label>
+
+                        <div class="row">
+                            <div class="form-field col-lg-12">
+                                <label for="message" class="label">Your Message</label>
+                                <textarea id="message" class="input-text" type="text" name=""></textarea>
+                            </div>
                         </div>
 
-
-                        <div class="form-field col-lg-12">
-                            <input id="massage" class="input-text" type="te xt" name="">
-                            <label for="massage" class="label">Your massage</label>
-                        </div>
-
-                        <div class="form-field col-lg-12">
-                            <input class="submit-btn" type="submit" value="submit">
+                        <div class="row">
+                            <div class="form-field d-grid gap-2 col-6 mx-auto">
+                                <input class="submit-btn" type="submit" value="Shoot">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -225,8 +241,10 @@
 <footer>
     <hr>
     <div class="footer-link">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-github"></i>
+        <div>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
         <a href="mailto:olyanatkachenko@gmail.com">olyanatkachenko@gmail.com</a>
     </div>
 
