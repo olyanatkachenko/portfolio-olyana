@@ -1,5 +1,9 @@
-:root{
-   --main-color: #5943E5;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --main-accent-color: #5943E5;
+    --grey-color: #656b8e;
+    --dark-main-color: #0f1221
 }
 
 
@@ -7,7 +11,7 @@ body {
     background: white;
 }
 
-main{
+main {
     padding-top: 60px;
     padding-bottom: 96px;
 }
@@ -22,7 +26,7 @@ header {
 
 .button-mail {
     cursor: pointer;
-    margin-right:auto;
+    margin-right: auto;
 }
 
 .nav-links {
@@ -42,17 +46,18 @@ header {
 .nav-links li a:hover {
     color: aqua;
 }
-.menu{
+
+.menu {
     display: none;
 }
 
 button {
     padding: 9px 25px;
-    color: var(--main-color);
+    color: var(--main-accent-color);
     background-color: transparent;
-    border: 1px solid var(--main-color);
-    border-radius: 50 px var(--main-color);
-    line-height:1;
+    border: 1px solid var(--main-accent-color);
+    border-radius: 50px var(--main-accent-color);
+    line-height: 1;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     margin-left: 15px;
@@ -63,7 +68,7 @@ button:hover {
 }
 
 
-.photo{
+.photo {
     display: flex;
     justify-content: center;
 }
@@ -75,25 +80,29 @@ button:hover {
     width: 160px;
 }
 
-h3{
+h3 {
     text-align: center;
 }
-h1{
+
+h1 {
     text-align: center;
 }
-h2{
+
+h2 {
     text-align: center;
 }
-.cta-connect{
+
+.cta-connect {
     display: block;
     text-align: center;
 }
-.footer-link{
+
+.footer-link {
     display: flex;
     justify-content: space-between;
 }
 
-.paragraf-about{
+.paragraf-about {
     display: flex;
     justify-content: space-between;
 }
@@ -104,16 +113,19 @@ h2{
     padding: 2em 1em;
     text-align: center;
 }
+
 .column {
     width: 100%;
     padding: 0.5em 0;
 }
+
 h2 {
     width: 100%;
     text-align: center;
     font-size: 3.5em;
     color: #1f003b;
 }
+
 .card {
     box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
     padding: 3.5em 1em;
@@ -123,6 +135,7 @@ h2 {
     transition: 0.3s;
     background-color: #ffffff;
 }
+
 .card .img-container {
     width: 34em;
     height: 22em;
@@ -130,19 +143,23 @@ h2 {
     border-radius: 50%;
     margin: 0 auto 2em auto;
 }
+
 .card img {
     width: 100%;
     border-radius: 10%;
 }
+
 .card h4 {
     font-weight: 500;
 }
+
 .card p {
     font-weight: 300;
     text-transform: uppercase;
     margin: 0.5em 0 2em 0;
     letter-spacing: 2px;
 }
+
 .icons {
     width: 50%;
     min-width: 180px;
@@ -150,20 +167,23 @@ h2 {
     display: flex;
     justify-content: space-between;
 }
+
 .card a {
     text-decoration: none;
     color: inherit;
     font-size: 1.4em;
 }
+
 .card:hover {
     background: linear-gradient(#6045ea, #8567f7);
     color: #ffffff;
 }
+
 .card:hover .img-container {
     transform: scale(1);
 }
 
-.inner-content{
+.inner-content {
     max-width: 800px;
     margin: 50px auto;
     position: relative;
@@ -173,21 +193,22 @@ h2 {
 .inner-content .title {
     text-transform: uppercase;
     text-align: center;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     letter-spacing: 3px;
     line-height: 48px;
 
 }
-.inner-content-description{
+
+.inner-content-description {
     text-align: center;
 }
 
-.contact-form .form-field{
+.contact-form .form-field {
     position: relative;
     margin: 32px 0;
 }
 
-.contact-form .input-text{
+.contact-form .input-text {
     display: block;
     width: 100%;
     height: 36px;
@@ -198,14 +219,15 @@ h2 {
     font-weight: 400;
 }
 
-.contact-form .input-text:focus{
+.contact-form .input-text:focus {
     outline: none;
 }
-.contact-form .input-text:focus + .label, .contact-form .input-text.not-empty + .label{
+
+.contact-form .input-text:focus + .label, .contact-form .input-text.not-empty + .label {
     transform: translateY(-24);
 }
 
-.contact-form .label{
+.contact-form .label {
     position: absolute;
     transition: transform 0.2s ease-in-out;
     text-transform: capitalize;
@@ -214,12 +236,11 @@ h2 {
     line-height: 26px;
     cursor: text;
 }
-.contact-form .submit-btn{
+
+.contact-form .submit-btn {
     display: inline-block;
     cursor: pointer;
 }
-
-
 
 
 @media screen and (min-width: 768px) {
@@ -227,13 +248,16 @@ h2 {
         padding: 1em 7em;
     }
 }
+
 @media screen and (min-width: 992px) {
     section {
         padding: 1em;
     }
+
     .card {
         padding: 5em 1em;
     }
+
     .column {
         flex: 0 0 33.33%;
         max-width: 33.33%;
@@ -245,7 +269,8 @@ h2 {
     .nav-links, .cta {
         display: none;
     }
-    .menu{
+
+    .menu {
         display: inherit;
     }
 }
